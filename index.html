@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock_Market_Analysis</title>
+
+    <!-- Using CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- using CLI -->
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class = "bg-gradient-to-br from-slate-950 via-slate-900 to-black w-[100vw] text-white bg-no-repeat min-h-[100vh] h-auto text-xs md:text-base">
+    <div id = "container" class = "flex flex-col justify-center items-center overflow-scroll sm:justify-start ">
+        <header class = "pt-16 text-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-500 font-extrabold tracking-wider font-sans">
+            <p>Stock Market Analysis</p>
+        </header>
+        <main id = "" class = "p-10 md:p-16 flex justify-between w-full">
+            <section id = "left" class = "">
+                <div id = "stock-info" class = "flex flex-col gap-6">
+                    <div id = "plot-container" class = "rounded-2xl  shadow-xl shadow-slate-800 w-[80vw] sm:max-w-[60rem] h-auto overflow-hidden">
+                        <div id="stock-chart" class = "bg-transparent relative">
+                            <ul id = "time-span" class = "flex flex-col absolute gap-3 bottom-1 scale-75 sm:scale-100 right-1 text-left p-2">
+                                <li id = "1mo" class = "p-2 bg-slate-800 rounded-md px-4 hover:scale-105 duration-150 hover:text-cyan-500 cursor-pointer  ">1 Month</li>
+                                <li id = "3mo" class = "p-2 bg-slate-800 rounded-md px-4 hover:scale-105 hover:text-cyan-500 cursor-pointer   duration-150 ">3 Month</li>
+                                <li id = "1y" class = "p-2 bg-slate-800 rounded-md px-4 hover:scale-105 hover:text-cyan-500 cursor-pointer   duration-150 ">1 Year</li>
+                                <li id = "5y" class = "p-2 bg-slate-800 rounded-md px-4 hover:scale-105 hover:text-cyan-500 cursor-pointer   duration-150 ">5 Year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id = "stock-data" class = " max-w-[60rem] flex flex-col gap-4 ">
+                        <div class = "flex gap-3 text-xl">
+                            <p id="stock-name"></p>
+                            <p id="book-value" class = "text-gray-300"></p>
+                            <p id="profit"></p>
+                        </div>
+                        <div id="about" class = "text-[0.8rem] text-gray-400"></div>
+                    </div>
+                </div>
+            </section>
+            <sectino id = "right">
+                <div id="stocks">
+                    <ul id = "stocks-list" class = "gap-3 flex-col text-center flex"></ul>
+                </div>
+            </sectino>
+        </main>
+    </div>
+    <script src = "./index.js"></script>
+</body>
+</html>
