@@ -39,4 +39,4 @@ This project is a web-based application for analyzing stock market data. It allo
 
 ## Acknowledgements
 
-- Special thanks to ["https://stocks3.onrender.com/api/stocks/getstocksdata"].
+- Special thanks to [Stocks3 API](https://stocks3.onrender.com/api/stocks/getstocksdata)
